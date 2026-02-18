@@ -7,7 +7,7 @@ export class CheckoutPage {
     await this.page.locator('#first-name').fill(firstName);
     await this.page.locator('#last-name').fill(lastName);
     await this.page.locator('#postal-code').fill(postalCode);
-    await this.page.getByRole('button', { name: 'Continue' }).click();
+    await this.page.getByRole('button', { name: 'Continue'}).click();
   }
 
   async finishCheckout() {
