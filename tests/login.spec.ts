@@ -6,7 +6,7 @@ import { LoginPage } from '../pages/LoginPage';
 test('TC001 - Valid login', async ({ page }) => {
 const login = new LoginPage(page);
 await login.goto();
-await login.login('standard_user', 'secret_sauce');
+await login.login('standard_user', 'secret_saucex');
 await login.assertLoginSuccess();
 });
 
